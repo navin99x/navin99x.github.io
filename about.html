@@ -6,7 +6,7 @@
     <meta name="description" content="About Nabin Poudel - BIT Student, Tech Enthusiast, and aspiring developer with a passion for AI and emerging technologies.">
     <meta name="author" content="Nabin Poudel">
     <title>About - Nabin Poudel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="canonical" href="https://nabinpoudel004.com/about.html">
     <!-- Privacy-friendly analytics by Plausible -->
     <script async src="https://plausible.io/js/pa-gwLG4EgOntk6IU3Pp2TUh.js"></script>
@@ -27,7 +27,7 @@
 
     <main>
         <section class="about-header">
-            <img src="images/photo.jpg" alt="Nabin Poudel" class="about-photo" loading="lazy">
+            <img src="/assets/images/photo.jpg" alt="Nabin Poudel" class="about-photo" loading="lazy">
             <div class="about-intro">
                 <h1>Nabin Poudel</h1>
                 <p>
@@ -95,7 +95,8 @@
 
         <section class="contact-form">
             <h2>Leave Me a Note</h2>
-            <form action="https://formspree.io/f/meejyzvl" method="POST">
+            <div id="form-message" class="form-message"></div>
+            <form id="contact-form" action="https://formspree.io/f/meejyzvl" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -108,7 +109,10 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
-                <button type="submit" class="btn-submit">Send Message</button>
+                <div class="form-buttons">
+                    <button type="submit" class="btn-submit">Send Message</button>
+                    <button type="button" class="btn-reset">Clear</button>
+                </div>
             </form>
         </section>
     </main>
@@ -116,5 +120,7 @@
     <footer>
         <p>&copy; 2025 Nabin Poudel</p>
     </footer>
+
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
